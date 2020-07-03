@@ -8,14 +8,10 @@ import java.sql.DriverManager;
  */
 public class Controller 
 {
-	// String server   = "den1.mysql6.gear.host";
-	// String database = "nhl1";
-	// String username = "nhl1";
-	// String password = "Co8gk?js!je4";	
-	String server = "localhost:3306";
-	String database = "nhl";
-	String username = "root";
-	String password = "gu66EIwit";
+	String server = "<server + port>";
+	String database = "<database>";
+	String username = "<username>";
+	String password = "<password>";
 	
 	/*
 	 * Metodi luo tietokantayhteyden. Myös Model-luokassa on vastaava metodi.
