@@ -21,18 +21,17 @@ public class Controller
 	public Connection getConnection() 
 	{
 		// Luodaan tietokantayhteys.
-        try 
-        {
-        	// Class.forName("com.mysql.jdbc.Driver");  
-        	Connection connection = DriverManager.getConnection("jdbc:mysql://" + server + "/" + database, username, password);
-            // Jos tietokantayhteys onnistuttiin luomaan, se palautetaan kutsujalle. 
-            return connection;
-        } 
-        catch (Exception ex) 
-        {
+	        try 
+        	{
+	            	Connection connection = DriverManager.getConnection("jdbc:mysql://" + server + "/" + database, username, password);
+        	   	// Jos tietokantayhteys onnistuttiin luomaan, se palautetaan kutsujalle. 
+	            	return connection;
+        	} 
+        	catch (Exception ex) 
+        	{
 			// Jos tietokantayhteyden luominen ei onnistunut, palautetaan null.
 			System.out.println(ex.getMessage());
-        	return null;
-        }
+        		return null;
+        	}
 	}
 }
